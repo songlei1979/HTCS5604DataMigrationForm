@@ -32,9 +32,9 @@
                 dataType: "json",
                 url: "https://htcs5604datamigrationapi.herokuapp.com/allCities",
                 success: function(cities){
-                    console.log(cities)
+                    console.log(cities);
                     var i = 0;
-                    while i < cities.length{
+                    while (i < cities.length) {
                         city = cities[i]
                         $("#userCityInput").append("<option value='"+city.cityID+"'>city.name</option>")
                         i = i + 1;

@@ -108,11 +108,11 @@
     </p>
     <p>
         username:
-        <input type="text" id="userUsernameInput">
+        <input type="text" id="userUsernameInput" required="required">
     </p>
     <p>
         password:
-        <input type="password" id="userPasswordInput">
+        <input type="password" id="userPasswordInput" required="required">
     </p>
     <p>
         strengths:

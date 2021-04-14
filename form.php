@@ -33,6 +33,12 @@
                 url: "https://htcs5604datamigrationapi.herokuapp.com/allCities",
                 success: function(cities){
                     console.log(cities)
+                    var i = 0;
+                    while i < cities.length{
+                        city = cities[i]
+                        $("#userCityInput").append("<option value='"+city.cityID+"'>city.name</option>")
+                    }
+
                 },
                 error:function (err){
                     alert("something wrong");
@@ -78,7 +84,9 @@
     </p>
     <p>
         city:
+        <select id = "userCityInput">
 
+        </select>
     </p>
     <p>
         username:

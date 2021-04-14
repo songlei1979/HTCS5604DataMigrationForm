@@ -67,7 +67,7 @@
                     $("#userAddressInput").val(user.address);
                     $("#userCityInput").val(user.cityID);
                     var i = 0;
-                    while (i < user.strengths){
+                    while (i < user.strengths.length){
                         var s = user.strengths[i];
                         var box = "#strengthTick"+s
                         console.log(box);

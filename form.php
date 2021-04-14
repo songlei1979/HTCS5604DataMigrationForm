@@ -19,7 +19,15 @@
                 dataType: "json",
                 url: "https://htcs5604datamigrationapi.herokuapp.com/allStrengths",
                 success: function(strengths){
-                    console.log(strengths)
+                    console.log(strengths);
+                    var i = 0;
+                    while (i<strengths.length){
+                        strength = strengths[i]
+                        $("#userStrengthInput").append("" +
+                            "<input type='checkbox' id='strengthTick"+strength.strengthID+"' name='strength' value="+strength.strengthID+">\n" +
+                            "<label>"+strength.name+"</label><br>")
+                        i = i + 1;
+                    }
                 },
                 error:function (err){
                     alert("something wrong");
@@ -100,7 +108,9 @@
     </p>
     <p>
         strengths:
+        <div id="userStrengthInput">
 
+    </div>
     </p>
     <p>
         <input type="submit" id="submitBtn">

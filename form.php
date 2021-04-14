@@ -66,6 +66,12 @@
                     $("#userLNInput").val(user.lastName);
                     $("#userAddressInput").val(user.address);
                     $("#userCityInput").val(user.cityID);
+                    var i = 0;
+                    while (i < user.strengths){
+                        var s = user.strengths[i]
+                        $("#strengthTick"+s).prop('checked', true);
+                        i = i + 1
+                    }
                 },
                 error:function (err){
                     alert("something wrong");

@@ -69,7 +69,9 @@
                     var i = 0;
                     while (i < user.strengths){
                         var s = user.strengths[i];
-                        $("#strengthTick"+s).attr('checked','checked');
+                        var box = "#strengthTick"+s
+                        console.log(box);
+                        $(box).attr('checked','checked');
                         i = i + 1;
                     }
                 },

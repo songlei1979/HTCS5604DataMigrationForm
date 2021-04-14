@@ -54,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618400018401</updated>
-      <workItem from="1618400019798" duration="3154000" />
+      <workItem from="1618400019798" duration="3561000" />
     </task>
     <task id="LOCAL-00001" summary="user info half">
       <created>1618401376056</created>
@@ -119,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618403008074</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added strength">
+      <created>1618403262751</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618403262751</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added strength">
+      <created>1618403382508</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618403382508</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,10 +146,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="added strength" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="179" y="23" key="CommitChangelistDialog2" timestamp="1618403007937">
+    <state x="179" y="23" key="CommitChangelistDialog2" timestamp="1618403382356">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="179" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1618403007937" />
+    <state x="179" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1618403382356" />
     <state x="481" y="314" key="Github.ShareDialog" timestamp="1618400766122">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
@@ -148,9 +162,9 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="493" y="349" key="NewPhpFileDialog/0.23.1440.821@0.23.1440.821" timestamp="1618400032818" />
-    <state x="220" y="110" key="Vcs.Push.Dialog.v2" timestamp="1618403010599">
+    <state x="220" y="110" key="Vcs.Push.Dialog.v2" timestamp="1618403386933">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="220" y="110" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1618403010599" />
+    <state x="220" y="110" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1618403386933" />
   </component>
 </project>

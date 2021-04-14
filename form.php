@@ -68,9 +68,9 @@
                     $("#userCityInput").val(user.cityID);
                     var i = 0;
                     while (i < user.strengths){
-                        var s = user.strengths[i]
-                        $("#strengthTick"+s).prop('checked', true);
-                        i = i + 1
+                        var s = user.strengths[i];
+                        $("#strengthTick"+s).attr('checked','checked');
+                        i = i + 1;
                     }
                 },
                 error:function (err){

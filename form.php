@@ -57,7 +57,7 @@
                     $("#userFNInput").val(user.firstName);
                     $("#userLNInput").val(user.lastName);
                     $("#userAddressInput").val(user.address);
-                    $("#userCityInput").prop("selectedIndex", (user.cityID-1));
+                    $("#userCityInput").val(user.cityID);
                 },
                 error:function (err){
                     alert("something wrong");

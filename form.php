@@ -37,6 +37,7 @@
                     while i < cities.length{
                         city = cities[i]
                         $("#userCityInput").append("<option value='"+city.cityID+"'>city.name</option>")
+                        i = i + 1;
                     }
 
                 },

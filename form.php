@@ -46,6 +46,10 @@
                 url: "https://htcs5604datamigrationapi.herokuapp.com/user/"+<?php echo $userID?>,
                 success: function(user){
                     console.log(user)
+                    $("#userIDInput").val(user.userID);
+                    $("#userFNInput").val(user.firstName);
+                    $("#userLNInput").val(user.lastName);
+                    $("#userAddressInput").val(user.address);
                 },
                 error:function (err){
                     alert("something wrong");
@@ -55,7 +59,43 @@
     </script>
 </head>
 <body>
+<form>
+    <p>
+        userID:
+        <input type="number" id="userIDInput" readonly>
+    </p>
+    <p>
+        firstname:
+        <input type="text" id="userFNInput">
+    </p>
+    <p>
+        lastname:
+        <input type="text" id="userLNInput">
+    </p>
+    <p>
+        address:
+        <input type="text" id="userAddressInput">
+    </p>
+    <p>
+        city:
 
+    </p>
+    <p>
+        username:
+        <input type="text" id="userUsernameInput">
+    </p>
+    <p>
+        password:
+        <input type="password" id="userPasswordInput">
+    </p>
+    <p>
+        strengths:
+
+    </p>
+    <p>
+        <input type="submit" id="submitBtn">
+    </p>
+</form>
 
 
 </body>

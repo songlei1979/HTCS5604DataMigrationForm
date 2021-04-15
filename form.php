@@ -81,7 +81,7 @@
             });
             //post to user
             $("#submitBtn").click(function (){
-                if isTicked(){
+                if (isTicked()){
 
                 }else {
                     alert("please tick your strengths");

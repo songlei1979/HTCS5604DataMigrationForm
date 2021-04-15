@@ -106,7 +106,7 @@
                             cityID: $("#userCityInput").val(),
                             username: $("#userUsernameInput").val(),
                             password: $("#userPasswordInput").val(),
-                            strength:strengths;
+                            strength:strengths
                             }),
                         success: function(netIncome){
                             // alert("success");

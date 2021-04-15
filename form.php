@@ -82,7 +82,7 @@
             //post to user
             $("#submitBtn").click(function (){
                 if (isTicked()){
-
+                    alert("ticked");
                 }else {
                     alert("please tick your strengths");
                 }

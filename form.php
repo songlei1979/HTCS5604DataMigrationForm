@@ -93,9 +93,9 @@
         function isTicked(){
             if ($("#userStrengthInput input:checkbox:checked").length > 0)
             {
-                return True;
+                return true;
             }
-            return False;
+            return false;
         }
     </script>
 </head>

@@ -84,9 +84,8 @@
                 if (isTicked()){
                     strengths = [];
                     var i = 0;
-                    while (i < user.strengths.length){
-                        var s = user.strengths[i];
-                        var box = "#strengthTick"+s;
+                    while (i < $("#userStrengthInput input:checkbox").length){
+                        var box = "#strengthTick"+(i+1);
                         if ($(box).is(':checked')){
                             strengths.append($(box).val());
                         }
@@ -108,9 +107,9 @@
                             password: $("#userPasswordInput").val(),
                             strength:strengths
                             }),
-                        success: function(netIncome){
+                        success: function(message){
                             // alert("success");
-                            $("#netIncome").val(netIncome);
+                            alert(message);
                         },
                         error:function (err){
                             alert("something wrong");

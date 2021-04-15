@@ -82,7 +82,40 @@
             //post to user
             $("#submitBtn").click(function (){
                 if (isTicked()){
-                    alert("ticked");
+                    strengths = [];
+                    var i = 0;
+                    while (i < user.strengths.length){
+                        var s = user.strengths[i];
+                        var box = "#strengthTick"+s;
+                        if ($(box).is(':checked')){
+                            strengths.append($(box).val());
+                        }
+                        i = i + 1;
+                    }
+                    console.log(strengths)
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json",
+                        dataType: "json",
+                        url: "https://htcs5604datamigrationapi.herokuapp.com/user/"+<?php echo $userID?>,
+                        data: JSON.stringify({
+                            userID: <?php echo $userID?>,
+                            firstname: $("#userFNInput").val(),
+                            lastname: $("#userLNInput").val(),
+                            address: $("#userAddressInput").val(),
+                            cityID: $("#userCityInput").val(),
+                            username: $("#userUsernameInput").val(),
+                            password: $("#userPasswordInput").val(),
+                            strength:strengths;
+                            }),
+                        success: function(netIncome){
+                            // alert("success");
+                            $("#netIncome").val(netIncome);
+                        },
+                        error:function (err){
+                            alert("something wrong");
+                        }
+                    });
                 }else {
                     alert("please tick your strengths");
                 }

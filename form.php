@@ -112,6 +112,7 @@
                             alert(message);
                         },
                         error:function (err){
+                            console.log(err)
                             alert("something wrong");
                         }
                     });

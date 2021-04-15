@@ -105,7 +105,7 @@
                             cityID: $("#userCityInput").val(),
                             username: $("#userUsernameInput").val(),
                             password: $("#userPasswordInput").val(),
-                            strength:strengths
+                            strengths:strengths
                             }),
                         success: function(message){
                             // alert("success");

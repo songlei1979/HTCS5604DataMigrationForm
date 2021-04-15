@@ -79,7 +79,24 @@
                     alert("something wrong");
                 }
             });
+            //post to user
+            $("#submitBtn").click(function (){
+                if isTicked(){
+
+                }else {
+                    alert("please tick your strengths");
+                }
+            });
+
         });
+
+        function isTicked(){
+            if ($("#userStrengthInput input:checkbox:checked").length > 0)
+            {
+                return True;
+            }
+            return False;
+        }
     </script>
 </head>
 <body>

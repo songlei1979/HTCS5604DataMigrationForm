@@ -133,7 +133,7 @@
     </script>
 </head>
 <body>
-<form>
+<form onclick="false">
     <p>
         userID:
         <input type="number" id="userIDInput" readonly>

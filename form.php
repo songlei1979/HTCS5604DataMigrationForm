@@ -108,7 +108,7 @@
                             strengths:strengths
                             }),
                         success: function(message){
-                            // alert("success");
+                            console.log(message);
                             alert(message);
                         },
                         error:function (err){

@@ -87,7 +87,7 @@
                     while (i < $("#userStrengthInput input:checkbox").length){
                         var box = "#strengthTick"+(i+1);
                         if ($(box).is(':checked')){
-                            strengths.append($(box).val());
+                            strengths.push($(box).val());
                         }
                         i = i + 1;
                     }
